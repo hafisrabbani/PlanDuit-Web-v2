@@ -7,10 +7,10 @@
       <IconButton @toggle="toggleNavigation" />
       <div class="collapse navbar-collapse" :class="{ 'show': isNavOpen }" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <NavLink label="Home" link="#" />
-          <NavLink label="About" link="#about" />
-          <NavLink label="Feature" link="#services" />
-          <NavLink label="Our Teams" link="#ourteams" />
+          <NavLink label="Home" link="/#" />
+          <NavLink label="About" link="/#about" />
+          <NavLink label="Feature" link="/#services" />
+          <NavLink label="Our Teams" link="/#ourteams" />
         </ul>
       </div>
     </div>

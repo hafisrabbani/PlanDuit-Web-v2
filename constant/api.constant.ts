@@ -1,9 +1,8 @@
 const CALCULATOR: String = 'calculator';
 const INFO: String = 'info';
-const BLOG: String  = "blog";
+const BLOG: String  = 'blog';
 const DICTIONARY: String = "dictionary";
 const APICONSTANTV1: Object = {
-    CALCULATOR,
     CALCULATOR_INVESTMENT: `${CALCULATOR}/investment`,
     CALCULATOR_BUDGETING: `${CALCULATOR}/budgeting-503020`,
     CALCULATOR_RISK_PROFILE: `${CALCULATOR}/profile-resiko`,

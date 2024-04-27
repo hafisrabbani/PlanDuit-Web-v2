@@ -15,11 +15,11 @@
       </div>
       <div class="row justify-content-center">
         <nav class="nav" style="font-size: 1rem !important;">
-          <NuxtLink to="index.html" class="nav-link nav-footer text-dark">Home</NuxtLink>
+          <NuxtLink to="/" class="nav-link nav-footer text-dark">Home</NuxtLink>
           <NuxtLink to="https://play.google.com/store/apps/details?id=com.pens.planduit.release"
              class="nav-link nav-footer text-dark">Download</NuxtLink>
-          <NuxtLink to="privacy-policy.html" class="nav-link nav-footer text-dark">Privacy Policy</NuxtLink>
-          <NuxtLink to="terms-of-service.html" class="nav-link nav-footer text-dark">Terms of Service</NuxtLink>
+          <NuxtLink to="legal/privacy-policy" class="nav-link nav-footer text-dark">Privacy Policy</NuxtLink>
+          <NuxtLink to="legal/terms-of-service" class="nav-link nav-footer text-dark">Terms of Service</NuxtLink>
         </nav>
       </div>
     </div>
