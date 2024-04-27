@@ -35,12 +35,9 @@ const LinksConstant: Object = {
             link: '/#ourteams'
         }
     ],
-    COMMON:[
-        {
-            name: 'Playstore',
-            link: 'https://play.google.com/store/apps/details?id=com.pens.planduit.release'
-        }
-    ]
+    COMMON:{
+        PLAYSTORE: 'https://play.google.com/store/apps/details?id=com.pens.planduit.release',
+    }
 }
 
 
