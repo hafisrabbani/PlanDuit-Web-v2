@@ -5,6 +5,7 @@
     <div id="main">
       <Navbar/>
       <slot/>
+      <Footer/>
     </div>
   </div>
 </template>

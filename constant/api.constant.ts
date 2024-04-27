@@ -1,8 +1,8 @@
-const CALCULATOR = 'calculator';
-const INFO = "info";
-const BLOG  = "blog";
-const DICTIONARY = "dictionary";
-const APICONSTANTV1 = {
+const CALCULATOR: String = 'calculator';
+const INFO: String = 'info';
+const BLOG: String  = "blog";
+const DICTIONARY: String = "dictionary";
+const APICONSTANTV1: Object = {
     CALCULATOR,
     CALCULATOR_INVESTMENT: `${CALCULATOR}/investment`,
     CALCULATOR_BUDGETING: `${CALCULATOR}/budgeting-503020`,

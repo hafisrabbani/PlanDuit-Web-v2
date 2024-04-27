@@ -27,13 +27,13 @@ export default defineNuxtConfig({
                 { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
             ],
             script:[
+                { src: '/js/jquery.min.js', async: true },
+                { src: '/js/loader.js', async: true, client: true },
+                { src: 'https://kit.fontawesome.com/1d954ea888.js', async: true },
                 { src: '/js/bootstrap.min.js', async: true },
                 { src: '/js/popper.min.js', async: true },
                 { src: '/js/wow.min.js', async: true },
                 { src: '/js/main.js', async: true },
-                { src: 'https://kit.fontawesome.com/1d954ea888.js', async: true },
-                { src: '/js/loader.js', async: true },
-                { src: '/js/jquery.min.js', async: true }
             ]
         }
     },

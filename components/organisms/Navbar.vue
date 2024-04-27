@@ -28,7 +28,7 @@ export default {
   },
   data() {
     return {
-      isNavOpen: false
+      isNavOpen: false,
     };
   },
   methods: {
