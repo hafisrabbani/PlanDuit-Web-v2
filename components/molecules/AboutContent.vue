@@ -4,9 +4,6 @@
   <SectionText>{{ text }}</SectionText>
 </template>
 
-<script setup>
-defineProps({
-  title: {type: String, required: false},
-  text: {type: String, required: true}
-});
+<script setup lang="ts">
+defineProps<{ title?: string; text: string }>();
 </script>

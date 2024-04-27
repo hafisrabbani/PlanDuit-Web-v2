@@ -4,11 +4,6 @@
   </li>
 </template>
 
-<script>
-export default {
-  props: {
-    label: { type: String, required: true },
-    link: { type: String, required: true }
-  }
-}
+<script setup lang="ts">
+defineProps<{ label: string; link: string }>();
 </script>

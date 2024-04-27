@@ -4,8 +4,6 @@
   </div>
 </template>
 
-<script setup>
-defineProps({
-  rowClass: {type: String, required: false}
-})
+<script setup lang="ts">
+defineProps<{ rowClass?: string }>();
 </script>

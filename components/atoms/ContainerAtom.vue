@@ -4,8 +4,6 @@
   </div>
 </template>
 
-<script setup>
-defineProps({
-  containerClass: {type: String, required: false}
-})
+<script setup lang="ts">
+defineProps<{ containerClass?: string }>();
 </script>
