@@ -12,11 +12,15 @@ const LinksConstant: Object = {
         },
         {
             name: 'Privacy Policy',
-            link: 'legal/privacy-policy'
+            link: '/legal/privacy-policy'
         },
         {
             name: 'Terms of Service',
-            link: 'legal/terms-of-service'
+            link: '/legal/terms-of-service'
+        },
+        {
+            name: 'tes',
+            link: '/blog-tes'
         }
     ],
     NAVBAR:[
@@ -35,7 +39,7 @@ const LinksConstant: Object = {
         {
             name: 'Our Teams',
             link: '/#ourteams'
-        }
+        },
     ],
     COMMON:{
         PLAYSTORE: 'https://play.google.com/store/apps/details?id=com.pens.planduit.release',

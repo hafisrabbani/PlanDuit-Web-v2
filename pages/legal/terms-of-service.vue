@@ -105,5 +105,5 @@
 <script setup lang="ts">
 useHead({
   title: 'Terms of Service',
-})
+});
 </script>
