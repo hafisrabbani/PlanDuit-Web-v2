@@ -1,9 +1,9 @@
 <template>
-    <section class="hiro-section bg-primary" id="ourteams">
-        <div class="container">
-            <OurTeamTitle> </OurTeamTitle>
-            <CardGroup></CardGroup>
-    </div>
-    </section>
+  <section class="hiro-section bg-primary" id="ourteams">
+    <ContainerAtom>
+      <OurTeamTitle></OurTeamTitle>
+      <CardGroup></CardGroup>
+    </ContainerAtom>
+  </section>
 </template>
 
