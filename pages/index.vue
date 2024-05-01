@@ -1,6 +1,7 @@
 <template>
   <HeroSection/>
   <AboutSection/>
+
 </template>
 
 <script setup lang="ts">
