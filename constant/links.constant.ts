@@ -1,3 +1,5 @@
+import TipsTrick from "~/components/molecules/TipsTrick.vue";
+
 const LinksConstant: Object = {
     FOOTER:[
         {
@@ -41,7 +43,8 @@ const LinksConstant: Object = {
     ],
     COMMON:{
         PLAYSTORE: 'https://play.google.com/store/apps/details?id=com.pens.planduit.release',
-    }
+    },
+ 
 }
 
 
