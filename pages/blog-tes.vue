@@ -13,6 +13,8 @@
       </ul>
     </div>
   </RowContentCenter>
+  <BlogSection></BlogSection>
+  <NewsSection></NewsSection>
 </template>
 
 <script setup lang="ts">

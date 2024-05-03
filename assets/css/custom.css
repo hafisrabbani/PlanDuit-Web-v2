@@ -90,3 +90,31 @@
     font-size: 18px;
     color: #888;
 }
+
+
+.card-blog {
+    background: #44D7B6;
+}
+
+.card-title{
+    font-size: 30px;
+    line-height: 30px;
+    
+}
+
+.card-text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btn-news {
+    color: #141414;
+    background-color: #FDFDFD;   
+}
+
+.btn-news:hover {
+    background-color: #44D7B6;
+    color: #FDFDFD ;
+
+}
+
