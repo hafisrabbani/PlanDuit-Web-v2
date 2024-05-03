@@ -1,5 +1,5 @@
 const TeamConstant: Object = {
-    MEMBER:[
+    MEMBER: [
         {
             name: "Ade Hafis R",
             role: "Product Owner / Mobile Developer"
@@ -30,6 +30,6 @@ const TeamConstant: Object = {
         },
 
     ],
-    }
-    
-    export default TeamConstant;
+}
+
+export default TeamConstant;

@@ -1,6 +1,6 @@
 const CALCULATOR: String = 'calculator';
 const INFO: String = 'info';
-const BLOG: String  = 'blog';
+const BLOG: String = 'blog';
 const DICTIONARY: String = "dictionary";
 const APICONSTANTV1 = {
     CALCULATOR_INVESTMENT: `${CALCULATOR}/investment`,
@@ -14,7 +14,7 @@ const APICONSTANTV1 = {
     INFO_GOLD_PRICE: `${INFO}/gold-price`,
     INFO_GRAIN_PRICE: `${INFO}/grain-price`,
     BLOG: `${BLOG}/all`,
-    BLOG_DETAIL: `${BLOG}/:id`,
+    BLOG_DETAIL: `${BLOG}/detail/:id`,
     DICTIONARY,
     DICTIONARY_DETAIL: `${DICTIONARY}/:id`,
 }

@@ -1,7 +1,5 @@
-import TipsTrick from "~/components/molecules/TipsTrick.vue";
-
 const LinksConstant: Object = {
-    FOOTER:[
+    FOOTER: [
         {
             name: 'Home',
             link: '/'
@@ -23,7 +21,7 @@ const LinksConstant: Object = {
             link: '/blog-tes'
         }
     ],
-    NAVBAR:[
+    NAVBAR: [
         {
             name: 'Home',
             link: '/'
@@ -41,10 +39,15 @@ const LinksConstant: Object = {
             link: '/#ourteams'
         },
     ],
-    COMMON:{
+    COMMON: {
         PLAYSTORE: 'https://play.google.com/store/apps/details?id=com.pens.planduit.release',
     },
- 
+    CALCULATOR: {
+        INVESTMENT: '/calculator/investment',
+        BUDGETING: '/calculator/budgeting-503020',
+        ZAKAT_EMAS: '/calculator/zakat-pertanian',
+        ZAKAT_TABUNGAN: '/calculator/zakat-tabungan',
+    }
 }
 
 

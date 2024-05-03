@@ -18,13 +18,18 @@
 <script setup lang="ts">
 import type { BlogDTO } from "~/DTO/BlogDTO";
 
-const { $GetArticles } = useNuxtApp();
-const articles = ref([] as BlogDTO['data']);
+const { $GetArticles, $GetDetailArticle } = useNuxtApp();
+const articles = ref([] as BlogDTO[]);
 const isLoaded = ref(false);
 onMounted(async () => {
-  const { data } = await $GetArticles();
+  const data = await $GetArticles();
   articles.value = data;
   isLoaded.value = true;
+
+  for (const article of data) {
+    const detail = await $GetDetailArticle(article.slug);
+    console.log(detail);
+  }
 });
 
 useHead({

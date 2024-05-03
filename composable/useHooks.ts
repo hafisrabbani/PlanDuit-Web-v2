@@ -1,17 +1,18 @@
 import axios from "axios";
+import type {RuntimeConfig} from "nuxt/schema";
 
 export const useHooks = () => {
-    const config = useRuntimeConfig();
-    const BASEURL = config.public.APIBASEV1;
+    const config: RuntimeConfig = useRuntimeConfig();
+    const BASEURL: string = config.public.APIBASEV1;
 
     const headers: object = {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
     }
 
-    const GET = async (url: String, data?: Object) => {
+    const GET = async (url: string, data?: Object) => {
         try {
-            const response = await axios.get(`${BASEURL}${url}`, { headers, params: data });
+            const response = await axios.get(`${BASEURL}${url}`, {headers, params: data});
             return response.data;
         } catch (error) {
             throw error;
@@ -20,7 +21,7 @@ export const useHooks = () => {
 
     const POST = async (url: String, data: Object) => {
         try {
-            const response = await axios.post(`${BASEURL}${url}`, data, { headers });
+            const response = await axios.post(`${BASEURL}${url}`, data, {headers});
             return response.data;
         } catch (error) {
             throw error;
