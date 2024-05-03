@@ -118,3 +118,13 @@
 
 }
 
+.btn-news-card {
+    background-color: #44D7B6;
+    color: #FDFDFD;
+}
+
+.btn-news-card:hover {
+    background-color: #FDFDFD;
+    color: #44D7B6 ;
+
+}

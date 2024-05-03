@@ -9,7 +9,7 @@
                 <p>Kategori 1</p>
                 <TitleBlog class="card-title">Lorem ipsum dolor sit amet consectetur. Semper sed arcu nibh.</TitleBlog>
                     <SectionText class="card-text">Lorem ipsum dolor sit amet consectetur. Est sit est vitae suscipit non.</SectionText>
-                    <ButtonRounded class="btn btn-dark">Read Now</ButtonRounded>
+                    <ButtonRounded class="btn btn-news-card">Read Now</ButtonRounded>
                 </div>
             </div>
       </div>
