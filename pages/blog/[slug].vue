@@ -32,6 +32,17 @@ const slug = route.params.slug as string;
 onMounted(async () => {
   article.value = await $GetDetailArticle(slug);
   article.value.created_at = FormatDate(article.value.created_at);
+
+  useHead({
+    title: 'Blog - ' + article.value.title,
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: article.value.description,
+      },
+    ]
+  })
 });
 
 const FormatDate = (date: string) => {
