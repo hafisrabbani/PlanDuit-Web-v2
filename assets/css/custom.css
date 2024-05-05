@@ -90,3 +90,56 @@
     font-size: 18px;
     color: #888;
 }
+
+
+.card-blog {
+    background: #44D7B6;
+}
+
+.card-title{
+    font-size: 30px;
+    line-height: 30px;
+    
+}
+
+.card-text {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.btn-news {
+    color: #141414;
+    background-color: #FDFDFD;
+    border: 1px solid #44D7B6;
+}
+
+.btn-news:hover {
+    background-color: #44D7B6;
+    color: #FDFDFD ;
+
+}
+
+.btn-news-card {
+    background-color: #44D7B6;
+    color: #FDFDFD;
+}
+
+.btn-news-card:hover {
+    background-color: #FDFDFD;
+    color: #44D7B6 ;
+}
+.card {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px !important;
+}
+
+.border-radius {
+    border-radius: 10px;
+}

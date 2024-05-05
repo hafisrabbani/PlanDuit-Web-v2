@@ -1,31 +1,55 @@
 <template>
-  <RowContentCenter>
-    <h1>Blog</h1>
-    <div v-if="!isLoaded">
-      <p>Loading...</p>
-    </div>
-    <div v-else="isLoaded">
-      <ul>
-        <li v-for="article in articles" :key="article.id">
-          <h2>{{ article.title }}</h2>
-          <p v-html="article.short_description"></p>
-        </li>
-      </ul>
-    </div>
-  </RowContentCenter>
+  <ContainerAtom>
+    <HeaderBlogs/>
+    <NewestArticle/>
+    <CategoryBlogSection @select-category="handleCategory($event)"/>
+    <CardBlog
+        v-for="(item, index) in articles"
+        :key="item.id"
+        :slug="item.slug"
+        :img-src="item.thumbnail"
+        v-if="index !== 0"
+        class="bg-light mb-3 mx-auto"
+        btnClass="btn btn-primary text-decoration-none px-4 py-2 text-white">
+      <template #category>
+        {{ item.category_name }}
+      </template>
+      <template #title>
+        {{ item.title }}
+      </template>
+      <template #content>
+        {{ item.short_description }}
+      </template>
+    </CardBlog>
+  </ContainerAtom>
 </template>
 
 <script setup lang="ts">
-import type { BlogDTO } from "~/DTO/BlogDTO";
+import type {BlogsDto} from "~/DTO/blog.dto";
 
-const { $GetArticles } = useNuxtApp();
-const articles = ref([] as BlogDTO['data']);
+const {$GetArticles} = useNuxtApp();
+const articles = ref([] as BlogsDto[]);
 const isLoaded = ref(false);
+const search = ref('');
+const selectedCategory = ref<number | null>(null);
+const newestArticle = ref({} as BlogsDto);
+const limit = ref(5);
 onMounted(async () => {
-  const { data } = await $GetArticles();
-  articles.value = data;
-  isLoaded.value = true;
+  await loadBlog();
 });
+
+const loadBlog = async () => {
+  articles.value = await $GetArticles({
+    limit: limit.value,
+    category_id: selectedCategory.value,
+  });
+  isLoaded.value = true;
+};
+
+const handleCategory = (id: number | null) => {
+  selectedCategory.value = id;
+  loadBlog();
+};
 
 useHead({
   title: 'Blog',

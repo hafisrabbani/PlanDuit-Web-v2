@@ -1,14 +1,8 @@
-import TipsTrick from "~/components/molecules/TipsTrick.vue";
-
 const LinksConstant: Object = {
     FOOTER:[
         {
             name: 'Home',
             link: '/'
-        },
-        {
-            name: 'Playstore',
-            link: 'https://play.google.com/store/apps/details?id=com.pens.planduit.release'
         },
         {
             name: 'Privacy Policy',
@@ -19,8 +13,8 @@ const LinksConstant: Object = {
             link: '/legal/terms-of-service'
         },
         {
-            name: 'tes',
-            link: '/blog-tes'
+            name: 'Blog',
+            link: '/blog'
         }
     ],
     NAVBAR:[
@@ -40,6 +34,10 @@ const LinksConstant: Object = {
             name: 'Our Teams',
             link: '/#ourteams'
         },
+        {
+            name: 'Blog',
+            link: '/blog'
+        }
     ],
     COMMON:{
         PLAYSTORE: 'https://play.google.com/store/apps/details?id=com.pens.planduit.release',
