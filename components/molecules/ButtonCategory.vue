@@ -1,9 +1,17 @@
 <template> 
-    <div class="justify-content-between text-center">
-        <ButtonRounded class="btn btn-news m-2">Kategori 1</ButtonRounded>
-        <ButtonRounded class="btn btn-news m-2">Kategori 2</ButtonRounded>
-        <ButtonRounded class="btn btn-news m-2">Kategori 3</ButtonRounded>
-        <ButtonRounded class="btn btn-news m-2">Kategori 4</ButtonRounded>
-        <ButtonRounded class="btn btn-news m-2">Kategori 5</ButtonRounded>
-    </div>
+    <RowContentCenter>
+      <ButtonRounded class="btn-news m-2" :class="{ active: isActive }"><slot></slot></ButtonRounded>
+    </RowContentCenter>
 </template>
+<script setup lang="ts">
+defineProps<{
+  isActive?: boolean;
+}>();
+</script>
+
+<style scoped>
+.active {
+  background-color: #44D7B6;
+  color: #FDFDFD;
+}
+</style>

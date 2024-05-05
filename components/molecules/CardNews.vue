@@ -1,5 +1,5 @@
 <template>
-    <div class="card mb-3 mx-auto" style="max-width: 840px;">
+    <div class="card mb-3 mx-auto">
       <div class="row no-gutters">
           <div class="col-md-6 d-flex align-items-center">
             <ImageAtom src="/images/banner_card.png" alt="Card News" class="img-fluid mx-auto"></ImageAtom>

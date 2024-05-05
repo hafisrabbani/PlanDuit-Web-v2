@@ -14,7 +14,8 @@ const APICONSTANTV1 = {
     INFO_GOLD_PRICE: `${INFO}/gold-price`,
     INFO_GRAIN_PRICE: `${INFO}/grain-price`,
     BLOG: `${BLOG}/all`,
-    BLOG_DETAIL: `${BLOG}/:id`,
+    BLOG_DETAIL: `${BLOG}/detail/:id`,
+    BLOG_CATEGORY: `${BLOG}/category`,
     DICTIONARY,
     DICTIONARY_DETAIL: `${DICTIONARY}/:id`,
 }
