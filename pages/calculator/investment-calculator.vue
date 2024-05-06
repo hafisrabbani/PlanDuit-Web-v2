@@ -1,3 +1,0 @@
-<template>
-  <CalculatorHero/>
-</template>

@@ -1,20 +1,17 @@
 <template>
-  <button class="btn" :class="{'btn-primary': isActive, 'btn-outline-primary': !isActive}">
+  <button class="btn mx-2" :class="{'btn-primary': isActive, 'btn-outline-primary': !isActive}">
+    {{ text }}
   </button>
-    <img :src="src" alt="calculator icon" class="img-fluid" style="color: #44D7B6; width: 50px; height: 50px;"/>
 </template>
 
 <script setup lang="ts">
-defineProps<{
-  isActive: boolean,
-  src: string
-}>()
+withDefaults(
+  defineProps<{
+    isActive: boolean;
+    text: string;
+  }>(),
+  {
+    isActive: false,
+  },
+)
 </script>
-
-<style scoped>
-svg {
-  width: 50px;
-  height: 50px;
-  fill: #44D7B6;
-}
-</style>

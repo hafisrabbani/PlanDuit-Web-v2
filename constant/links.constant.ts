@@ -42,12 +42,32 @@ const LinksConstant: Object = {
     COMMON: {
         PLAYSTORE: 'https://play.google.com/store/apps/details?id=com.pens.planduit.release',
     },
-    CALCULATOR: {
-        INVESTMENT: '/calculator/investment',
-        BUDGETING: '/calculator/budgeting-503020',
-        ZAKAT_EMAS: '/calculator/zakat-pertanian',
-        ZAKAT_TABUNGAN: '/calculator/zakat-tabungan',
-    }
+    CALCULATOR: [
+        {
+            name: 'Investasi',
+            link: '/calculator/investment'
+        },
+        {
+            name: 'Budgeting',
+            link: '/calculator/budgeting-503020'
+        },
+        {
+            name: 'Profile Resiko',
+            link: '/calculator/profile-resiko'
+        },
+        {
+            name: 'Zakat Penghasilan',
+            link: '/calculator/zakat-penghasilan'
+        },
+        {
+            name: 'Zakat Emas',
+            link: '/calculator/zakat-emas'
+        },
+        {
+            name: 'Zakat Tabungan',
+            link: '/calculator/zakat-tabungan'
+        },
+    ]
 }
 
 
