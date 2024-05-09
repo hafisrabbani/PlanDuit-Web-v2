@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     ],
     app: {
         head: {
-            titleTemplate: '%s - Planduit',
+            titleTemplate: '%s | Planduit',
             htmlAttrs: {
                 lang: 'en'
             },
@@ -42,6 +42,7 @@ export default defineNuxtConfig({
         }
     },
     plugins: [
-        '~/plugins/blogHooks.ts'
+        '~/plugins/blogHooks.ts',
+        '~/plugins/dictionaryHooks.ts'
     ]
 })

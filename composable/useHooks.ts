@@ -11,12 +11,17 @@ export const useHooks = () => {
 
     const GET = async (url: String, data?: Object) => {
         try {
-            const response = await axios.get(`${BASEURL}${url}`, { headers, params: data });
+            const response = await axios.get(`${BASEURL}${url}`, { headers, params: data }).catch((error) => {
+                showError({
+                    statusCode: error.response.status,
+                })
+            });
             return response.data;
         } catch (error) {
-            throw error;
+            throw createError({ statusCode: 404, statusMessage: 'Page Not Found', fatal: true });
         }
-    }
+    };
+
 
     const POST = async (url: String, data: Object) => {
         try {

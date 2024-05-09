@@ -38,7 +38,7 @@ const isLoaded = ref(false);
 const search = ref('');
 const selectedCategory = ref<number | null>(null);
 const newestArticle = ref({} as BlogsDto);
-const limit = ref(5);
+const limit = ref(10);
 onMounted(async () => {
   await loadBlog();
 });
