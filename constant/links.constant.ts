@@ -12,10 +12,6 @@ const LinksConstant: Object = {
             name: 'Terms of Service',
             link: '/legal/terms-of-service'
         },
-        {
-            name: 'Blog',
-            link: '/blog'
-        }
     ],
     NAVBAR:[
         {
@@ -37,6 +33,10 @@ const LinksConstant: Object = {
         {
             name: 'Blog',
             link: '/blog'
+        },
+        {
+            name: 'Dictionary',
+            link: '/dictionary'
         }
     ],
     COMMON:{

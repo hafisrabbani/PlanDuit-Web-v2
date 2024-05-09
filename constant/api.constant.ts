@@ -18,5 +18,6 @@ const APICONSTANTV1 = {
     BLOG_CATEGORY: `${BLOG}/category`,
     DICTIONARY,
     DICTIONARY_DETAIL: `${DICTIONARY}/:id`,
+    DICTIONARY_RANDOM: `${DICTIONARY}/random`,
 }
 export default APICONSTANTV1;

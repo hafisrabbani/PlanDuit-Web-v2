@@ -91,6 +91,10 @@
     color: #888;
 }
 
+.border-primary {
+    border-left: 5px solid #44D7B6 !important;
+}
+
 
 .card-blog {
     background: #44D7B6;

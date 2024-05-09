@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     ],
     app: {
         head: {
-            titleTemplate: '%s - Planduit',
+            titleTemplate: '%s | Planduit',
             htmlAttrs: {
                 lang: 'en'
             },
