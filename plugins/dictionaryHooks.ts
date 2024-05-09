@@ -21,7 +21,6 @@ export default defineNuxtPlugin(() => {
                 }
             });
 
-
             return data;
         }catch (error) {
             throw error;

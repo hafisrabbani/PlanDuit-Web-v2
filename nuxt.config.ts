@@ -42,6 +42,7 @@ export default defineNuxtConfig({
         }
     },
     plugins: [
-        '~/plugins/blogHooks.ts'
+        '~/plugins/blogHooks.ts',
+        '~/plugins/dictionaryHooks.ts'
     ]
 })

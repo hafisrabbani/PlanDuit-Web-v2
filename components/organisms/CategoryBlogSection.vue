@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex justify-content-center justify-content-md-start">
+  <div class="d-flex">
     <ButtonCategory
         v-for="item in category"
         :key="item.id"
@@ -15,8 +15,6 @@
 
 <script setup lang="ts">
 import type { BlogCategoryDto } from "~/DTO/blog.dto";
-import { ref } from 'vue';
-
 const emit = defineEmits(['selectCategory']);
 const {$GetCategoryBlog} = useNuxtApp();
 const category = ref([] as BlogCategoryDto[]);
