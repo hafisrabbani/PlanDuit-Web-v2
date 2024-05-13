@@ -44,4 +44,8 @@ const getCaption = (statusCode: number) => {
       return 'Something went wrong';
   }
 }
+
+useHead({
+  title: props.error.statusCode + ' ' + getMsg(props.error.statusCode)
+})
 </script>
