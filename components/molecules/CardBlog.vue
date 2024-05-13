@@ -5,7 +5,7 @@
         <slot name="category"></slot>
       </BadgeCategory>
       <div class="row justify-content-center align-items-center">
-        <div class="col-md-6 order-sm-2 order-xs-2">
+        <div class="col-md-6 order-sm-2 order-sm-last order-last">
           <BlogTitle class="text-left">
             <slot name="title"></slot>
           </BlogTitle>
