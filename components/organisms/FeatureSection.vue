@@ -1,5 +1,5 @@
 <template>
-  <section class="hiro-section" id="services">
+  <section class="hiro-section" id="feature">
     <ContainerAtom>
       <div class="service-section">
         <SectionTitle class="mb-5">Feature</SectionTitle>
